@@ -24,10 +24,14 @@ Maybe, but it's probably not worth it on the Raspberry Pi. `x86` processors are 
 
 ## So how do I install programs?
 
-For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and it may available through your distrobution's package manager.
+For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and it may available through your distrobution's package manager. Generally speaking, the applications in the package manager are the safest bet. Their integrity has been verified (meaning it's a trusted source), and they have been tested with the operating system. They are not guaranteed to be bug free, but it's extremely unlikely that installing anything from the package manager will cause system unstability.
 
-In Raspbian, this is accomplished using `apt-get`. To install vim, the command `sudo apt-get install vim` will automatically install not only vim, but any dependencies that vim requires to run*. If you're not sure what the package is called you can search through the repository using `apt-cache search vim`. Notice that you don't need administrative rights to run the search!
+In Raspbian, the package manager is `apt-get`. To install vim, for example, the command `sudo apt-get install vim` will automatically install not only vim, but any dependencies that are also required*. If you're not sure what the package is called you can search through the repository using `apt-cache search vim`. Notice that you don't need administrative rights to run the search!
 
 For the other open source projects, you can download the source and compile it yourself. You may want to do this if the version in the repository is older than you want, or it simply isn't in the repository. We'll go into more detail on this in the first post of our Tmux series.
+
+## A note about security
+
+While there's a popular idea that Windows is the only Operating System that has secuirty issues, **it's not true**.  Malware exists on the Linux, Mac OS, iOS, and Android too. That means it's important to pay attention to what you're installing. Things from the package repository are unlikely to be an issue, but be careful about random binaries you download off the internet. Make sure you trust the source that's providing the application before you download, let alone run it!
 
 *Note: Always run `sudo apt-get update` before installing an application. Otherwise you might install an older version than you want.
