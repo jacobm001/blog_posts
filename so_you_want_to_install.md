@@ -32,6 +32,6 @@ For the other open source projects, you can download the source and compile it y
 
 ## A note about security
 
-While there's a popular idea that Windows is the only Operating System that has secuirty issues, **it's not true**.  Malware exists on the Linux, Mac OS, iOS, and Android too. That means it's important to pay attention to what you're installing. Things from the package repository are unlikely to be an issue, but be careful about random binaries you download off the internet. Make sure you trust the source that's providing the application before you download, let alone run it!
+While there's a popular idea that Windows is the only Operating System that has secuirty issues, **it's not true**.  Malware exists on Linux, Mac OS, iOS, and Android too. That means it's important to pay attention to what you're installing. Things from the package repository are unlikely to be an issue, but be careful about random binaries you download off the internet. Make sure you trust the source that's providing the application before you download, let alone run it!
 
 *Note: Always run `sudo apt-get update` before installing an application. Otherwise you might install an older version than you want.
