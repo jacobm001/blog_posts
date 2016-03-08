@@ -4,7 +4,7 @@
 
 **Suggested Tags:** raspberrypi, linux
 
-# So you want to install _______
+# Installing Applications on a Raspberry Pi Running Linux
 
 One of the most common questions I see on the Raspberry Pi StackExchange regards how to install a specific piece of software. While often straightforward, the question can be much more complicated than one might be used to.
 
