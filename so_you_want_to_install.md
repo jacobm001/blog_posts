@@ -24,11 +24,9 @@ Maybe, but it's probably not worth it on the Raspberry Pi. `x86` processors are 
 
 ## So how do I install programs?
 
-For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and/or it's available through your distrobution's package manager.
+For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and it may available through your distrobution's package manager.
 
-In Raspbian, this is accomplished using `apt-get`. To install vim, the command `sudo apt-get install vim` will automatically install not only vim, but any dependencies that vim requires to run*.
-
-If you're not sure what the package is called you can search through the repository using `apt-cache search vim`. Notice that you don't need administrative rights to run the search!
+In Raspbian, this is accomplished using `apt-get`. To install vim, the command `sudo apt-get install vim` will automatically install not only vim, but any dependencies that vim requires to run*. If you're not sure what the package is called you can search through the repository using `apt-cache search vim`. Notice that you don't need administrative rights to run the search!
 
 For the other open source projects, you can download the source and compile it yourself. You may want to do this if the version in the repository is older than you want, or it simply isn't in the repository. We'll go into more detail on this in the first post of our Tmux series.
 
