@@ -1,8 +1,8 @@
 **Author:** Jacobm001
 
-**Publish Status:** draft
+**Publish Status:** published - 03/13/2016
 
-**Suggested Tags:** raspberrypi, linux
+**Suggested Tags:** raspberrypi, raspbian
 
 # Installing Applications on a Raspberry Pi Running Linux
 
