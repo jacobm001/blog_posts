@@ -16,7 +16,7 @@ By far, the most common problem we see is when a user wants to install a program
 
 ### Wait, what!? Isn't a processor a processor?
 
-Yes, and no. A processor (aka a CPU), is what does the computing within a computer. Each processor has a fundamental *archiecture* type. In desktop, laptop, and servers the most common architecture used is `x86`. Your phone, laptop, and cable box almost always contain an `ARM` processor.
+Yes, and no. A processor (aka a CPU), is what does the computing within a computer. Each processor has a fundamental *architecture* type. In desktops, laptops, and servers the most common architecture used is `x86`. Your phone, laptop, and cable box almost always contain an `ARM` processor.
 
 To simplify the different a little, think about the languages humans speak. A book can be written in English, French, and German. If a person only speaks English, giving them a book written in German is useless to them. Sure, the book has meaning, but they can't understand it.
 
@@ -26,7 +26,7 @@ Maybe, but it's probably not worth it on the Raspberry Pi. `x86` processors are 
 
 ## So how do I install programs?
 
-For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and it may available through your distrobution's package manager. Generally speaking, the applications in the package manager are the safest bet. Their integrity has been verified (meaning it's a trusted source), and they have been tested with the operating system. They are not guaranteed to be bug free, but it's extremely unlikely that installing anything from the package manager will cause system unstability.
+For open source tools, the solution is often fairly simple. Many projects will host an `ARM` binary, and it may be available through your distribution's package manager. Generally speaking, the applications in the package manager are the safest bet. Their integrity has been verified (meaning it's a trusted source), and they have been tested with the operating system. They are not guaranteed to be bug free, but it's extremely unlikely that installing anything from the package manager will cause system unstability.
 
 In Raspbian, the package manager is `apt-get`. To install vim, for example, the command `sudo apt-get install vim` will automatically install not only vim, but any dependencies that are also required*. If you're not sure what the package is called you can search through the repository using `apt-cache search vim`. Notice that you don't need administrative rights to run the search!
 
