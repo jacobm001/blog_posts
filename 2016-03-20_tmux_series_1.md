@@ -6,11 +6,11 @@
 
 # Tmux 101: Installing from Source
 
-For the first entry in our *[Tmux](https://tmux.github.io/)* 101 series, we're going to learn how to install Tmux from source. 
+For the first entry in our *[Tmux](https://tmux.github.io/) 101* series, we're going to learn how to install Tmux from source. 
 
 ## What is Tmux?
 
-Tmux is a "terminal multiplexer". In short, it allows you to have multiple "windows" in the same terminal. If desired, the windows can then be split into "panels" that allow you to have mutliple terminal inputs visible at the same time. What's possibly the most useful feature though, is that Tmux allows you to leave software running in the background, even if you disconect the session.
+Tmux is a "terminal multiplexer". In short, it allows you to have multiple "windows" in the same terminal. If desired, the windows can then be split into "panels" that allow you to have mutliple terminal inputs visible at the same time. What's possibly the most useful feature though, is that Tmux allows you to leave software running in the background, even if you disconnect the session.
 
 ## Why install from the source? Isn't the Repo good enough?
 
