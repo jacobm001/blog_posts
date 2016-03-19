@@ -62,11 +62,11 @@ Finally, we just need to clean up our mess. Use the command `cd ..` (assuming yo
 
 Now that Tmux is successfully installed, feel free to browse some of its documentation. Next week's post will focus on Tmux's basic commands and session management.
 
-[^1]: These commands work on Raspbian and most Debian based operating systems. If you're running a different OS, like Arch, you'll need to use that distribution's package manager instead.
-
 ## Additional Resources
 - [Tmux](https://tmux.github.io/)
 - Tmux [Documentation](http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/tmux.1?query=tmux&sec=1)
+
+[^1]: These commands work on Raspbian and most Debian based operating systems. If you're running a different OS, like Arch, you'll need to use that distribution's package manager instead.
 
 [^2]: The flags as follow are:
 - `x`: extract
