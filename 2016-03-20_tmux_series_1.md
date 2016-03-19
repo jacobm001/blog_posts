@@ -26,7 +26,7 @@ The first thing we'll need to do is install some dependencies. As the homepage s
 
 ### 2. Getting tmux
 
-Now that the dependences are installed, we can download the source code for tmux. Download and unzip the source using the commands[^1]:
+Now that the dependences are installed, we can download the source code for tmux. Download and unzip the source using the commands[^2]:
 
 	wget https://github.com/tmux/tmux/releases/download/2.1/tmux-2.1.tar.gz
 	tar xfa tmux-2.1.tar.gz
@@ -48,11 +48,11 @@ In case you're familiar with the `-j` parameter, do **not** use this with tmux. 
 
 Once it's finished, the software can be installed by typing `sudo make install`. Notice the `sudo` at the beginning of the command. Installing software in this manor includes administrative rights, just as if you had done it with `apt-get`.
 
-### 5. Clean up and done
+### 5. Test and clean up
 
-At this point, Tmux is installed. Now, we just need to clean up our mess. Use the command `cd ..` to get to the parent directory. Now, we can remove both the archive file, and the source files we no longer need by typing `rm -Rf tmux*`. You may notice that typing `tmux` does not launch our session, and probably gives you an error.
+The last thing to do is to refresh the terminal session. Assuming you're using `bash` (the default terminal shell), this can be done by either using the command `source ~/.bashrc` or by simply closing and reopening the terminal window. Now if you type `tmux`, you should see a new tmux session pop up. If it does, everything works, and we can begin cleaning up the extra files. You can close Tmux by typing `exit`.
 
-The last thing to do is to refresh the terminal session. Assuming you're using `bash` (the default terminal shell), this can be done by either using the command `source ~/.bashrc` or by simply closing and reopening the terminal window. Now if you type `tmux`, you should see a new tmux session pop up. You can close it by typing `exit`.
+Finally, we just need to clean up our mess. Use the command `cd ..` (assuming you didn't close the window in the previuos step) to get to the parent directory. We can remove both the archive file, and the source directory that we no longer need by typing `rm -Rf tmux*`. 
 
 ## Next week
 
