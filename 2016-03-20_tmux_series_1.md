@@ -38,11 +38,29 @@ Now that the dependences are installed, we can download the source code for tmux
 
 In case you're unfamiliar with what you just did, `wget` downloaded an archive file containing the tmux source code. `tar` is then used to extract the files[^2]. Finally, `cd` changes the pwd to location where we extracted our files.
 
-### Compiling tmux
+### 3. The configuration step
 
+At this point, we're in the directory that contains the source files for tmux. While all these files are important to the eventual process, we're really only concerned with one file, `configure`. Running this script will check for dependencies, and assuming all are met, create a [Makefile](https://en.wikipedia.org/wiki/Makefile). Run this script with the command `./configure`.
 
+Since we've already installed the required dependencies, it should finish without errors on a standard Raspbian installation. 
 
+### 4. Compile and install Tmux
 
+If you view the directory using `ls` you should now see a Makefile. To compile tmux, type the command `make`. This will take a significant amount of time. Go grab a cup of coffee, some pi, whatever... be patient. 
+ 
+In case you're familiar with the `-j` parameter, do **not** use this with tmux. `-j` allows for multiple cores to be used when compiling software, which generally reduces compile time. The makefile produced by the configure script does **not** support parallel compilation, and will cause it to error.
+
+Once it's finished, the software can be installed by typing `sudo make install`. Notice the `sudo` at the beginning of the command. Installing software in this manor includes administrative rights, just as if you had done it with `apt-get`.
+
+### 5. Clean up and done
+
+At this point, Tmux is installed. Now, we just need to clean up our mess. Use the command `cd ..` to get to the parent directory. Now, we can remove both the archive file, and the source files we no longer need by typing `rm -Rf tmux*`. You may notice that typing `tmux` does not launch our session, and probably gives you an error.
+
+The last thing to do is to refresh the terminal session. Assuming you're using `bash` (the default terminal shell), this can be done by either using the command `source ~/.bashrc` or by simply closing and reopening the terminal window. Now if you type `tmux`, you should see a new tmux session pop up. You can close it by typing `exit`.
+
+## Next week
+
+Now that Tmux is successfully installed, feel free to browse some of its documentation. Next week's post will focus on Tmux's basic commands and session management.
 
 [^1]: These commands work on Raspbian and most Debian based operating systems. If you're running a different OS, like Arch, you'll need to use that distribution's package manager instead.
 
