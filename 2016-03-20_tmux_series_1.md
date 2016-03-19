@@ -6,11 +6,7 @@
 
 # Tmux 101: Installing from Source
 
-In last week's post, I mentioned that we'd be starting a series on [Tmux](https://tmux.github.io/). I've already mentioned installing software using the package manager (`sudo apt-get install tmux`), but this article is going to go over how to install it from the source.
-
-## What is Tmux?
-
-Tmux is a "terminal multiplexer". In short, it allows you to have multiple "windows" in the same terminal; if desired, the windows can then be split into "panels" that allow you to have mutliple terminal inputs visible at the same time.
+Tmux is a "terminal multiplexer". In short, it allows you to have multiple "windows" in the same terminal. If desired, the windows can then be split into "panels" that allow you to have mutliple terminal inputs visible at the same time. In last week's post, I mentioned that we'd be starting a series on [Tmux](https://tmux.github.io/). I've already discussed installing software using the package manager (`sudo apt-get install tmux`), but this article is going to explain how to install it from the source.
 
 ## Why install from the source? Isn't the Repo good enough?
 
@@ -48,7 +44,7 @@ Since we've already installed the required dependencies, it should finish withou
 
 If you view the directory using `ls` you should now see a Makefile. To compile tmux, type the command `make`. This will take a significant amount of time. Go grab a cup of coffee, some pi, whatever... be patient. 
  
-In case you're familiar with the `-j` parameter, do **not** use this with tmux. `-j` allows for multiple cores to be used when compiling software, which generally reduces compile time. The makefile produced by the configure script does **not** support parallel compilation, and will cause it to error.
+In case you're familiar with the `-j` parameter, do **not** use this with tmux. `-j` allows for multiple cores to be used when compiling software, which normally reduces compile time. The makefile produced by the configure script does **not** support parallel compilation, and will cause it to throw an error.
 
 Once it's finished, the software can be installed by typing `sudo make install`. Notice the `sudo` at the beginning of the command. Installing software in this manor includes administrative rights, just as if you had done it with `apt-get`.
 
