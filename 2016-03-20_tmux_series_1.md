@@ -1,6 +1,6 @@
 **Author:** Jacobm001
 
-**Publish Status:** draft
+**Publish Status:** published 03/20/2016
 
 **Suggested Tags:** raspberrypi, raspbian, tmux
 
