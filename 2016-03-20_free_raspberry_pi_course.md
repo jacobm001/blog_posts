@@ -8,7 +8,7 @@
   
 DigiKey, through their Continuing Education Center is sponsoring "***Building Raspberry Pi Devices and Data Displays for the Internet of Things***." The course runs March 21-25 for an hour a day (2-3 PM Eastern Time). If you can't attend during the live presentation, the presentations and slide decks are posted (usually later the same day).
 
-### The Curriculum
+## The Curriculum
 
 **March 21 - Day 1**: Building a Raspberry Pi LED Flasher 
 
