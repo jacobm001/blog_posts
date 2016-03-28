@@ -1,8 +1,8 @@
 **Author:** SteveRobillard
 
-**Publish Status:** draft
+**Publish Status:** published 03/27/16
 
-**Suggested Tags:** raspberrypi, bash, commandline, man, keyboardshortcuts
+**Suggested Tags:** raspberrypi, bash, command line, man page, keyboard shortcuts
 
 # Improving Your Command Line Skills Part 1 #
 
