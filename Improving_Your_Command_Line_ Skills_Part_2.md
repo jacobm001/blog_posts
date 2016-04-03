@@ -76,7 +76,7 @@ I mentioned that this tar command was like unzip, but if we alias this as unzip:
 
 **alias unzip =”tar xfa “**
 
-But if we do we will be overriding the default behavior of the existing unzip command. This can cause strange behavior that is difficult to debug. However, there are times when this can be helpful – see the top example below. To avoid this type your intended alias name (unzip) at the command line. If you don’t see: 
+We will be overriding the default behavior of the existing unzip command. This can cause strange behavior that is difficult to debug. However, there are times when this can be helpful – see the top example below. To avoid this type your intended alias name (unzip) at the command line. If you don’t see: 
 
 **bash: youraliasname: command not found**
 
