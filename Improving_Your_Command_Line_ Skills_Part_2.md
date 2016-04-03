@@ -94,7 +94,7 @@ A web search will turn up hundreds of useful Bash aliases, but here are a few I 
 
 **alias df='df -h'**    	# human readable sizes
 
-**alias top="htop"**   		# run htop instead of top
+**alias top="htop"**   		# run htop instead of top (you need to install htop first)
 
 **alias diff='colordiff'** 	# colorize the diff output for easier viewing
 
