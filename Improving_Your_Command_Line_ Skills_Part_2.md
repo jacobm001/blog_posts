@@ -4,7 +4,7 @@
 
 #  #Improving Your Command Line Skills Part 2 #
 
-In part one of this series we looked at keyboard shortcuts and how to use man and TLDR pages. In this part we will look at Bash aliases.
+In [part one](https://raspberrypise.tumblr.com/post/141758901139/improving-your-command-line-skills-part-1) of this series we looked at keyboard shortcuts and how to use man and TLDR pages. In this part we will look at Bash aliases.
 
 ## Aliases ##
 Aliases are a way to rename a function, create a command that is easier to remember and a way to save typing.
