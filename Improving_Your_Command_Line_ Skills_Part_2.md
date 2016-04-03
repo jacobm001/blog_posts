@@ -1,8 +1,8 @@
 **Author: Steve Robillard**
 
-**Suggested Tags:** raspberrypi, bash, command line, Bash aliases
+**Suggested Tags:** raspberrypi, bash, command line, bash aliases
 
-#  #Improving Your Command Line Skills Part 2 #
+#  Improving Your Command Line Skills Part 2 #
 
 In [part one](https://raspberrypise.tumblr.com/post/141758901139/improving-your-command-line-skills-part-1) of this series we looked at keyboard shortcuts and how to use man and TLDR pages. In this part we will look at Bash aliases.
 
@@ -74,7 +74,7 @@ Another thing to be careful of with aliases is hiding an existing command. If yo
 
 I mentioned that this tar command was like unzip, but if we alias this as unzip:
 
-**alias unzip =”tar xfa “**
+**alias unzip=”tar xfa“**
 
 We will be overriding the default behavior of the existing unzip command. This can cause strange behavior that is difficult to debug. However, there are times when this can be helpful – see the top example below. To avoid this, type your intended alias name (unzip) at the command line. If you don’t see: 
 
