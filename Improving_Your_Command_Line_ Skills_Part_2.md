@@ -96,6 +96,8 @@ A web search will turn up hundreds of useful Bash aliases, but here are a few I 
 
 **alias diff='colordiff'** 	# colorize the diff output for easier viewing
 
+If you have a favorite alias please add it in a comment below.
+
 remember if you aren’t sure what these commands do (e.g. rm = remove a file) or what the switches do (e.g. –i = interactive) you can read the man page for the command (i.e  man command).
 
 ## Additional Resources ##
