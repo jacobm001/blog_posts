@@ -13,6 +13,8 @@ The syntax for an alias is:
 
 **alias alias_name="command_to_run"**
 
+Note: there is no space between the alias_name and the = sign, and none between the equal sign and the quotation mark. The only place you can have a space is after the word alias and within the quotation marks.
+
 For example we can alias the 
 
 **sudo apt-get update && sudo apt-get –y upgrade**
