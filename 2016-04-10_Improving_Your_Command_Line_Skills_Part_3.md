@@ -109,13 +109,13 @@ A web search will return dozens of useful Bash functions, but here are some I fi
     cd $1
 }</pre>
 
-usage: mcd newdirectoryname
+usage: **mcd newdirectoryname**
 
 ###Change directory and list all files:###
 
 <pre>function cdll() { cd "$@" && ls -la; }</pre>
 
-usage: cdll newdirectoryname
+usage: **cdll newdirectoryname**
 
 ###Create an archive (this is the inverse to extract):###
 <pre># roll - archive wrapper
@@ -133,8 +133,9 @@ roll()
   esac
 }</pre>
 
-usage: roll compressedfilename filesordirectorytoarchive
-master.tar.gz ./tmux-master/*
+usage: **roll compressedfilename filesordirectorytoarchive**
+
+e.g. **roll master.tar.gz ./tmux-master/***
 
 ## Additional Resources ##
  
