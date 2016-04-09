@@ -1,5 +1,6 @@
 # Improving Your Command Line Skills Part 3 #
 **Author: Steve Robillard**
+**Suggested Tags:** raspberrypi, bash, command line, bash functions
 
 In the [part one](https://raspberrypise.tumblr.com/post/141758901139/improving-your-command-line-skills-part-1) of this series we covered man pages and keyboard shortcuts. In [part two](https://raspberrypise.tumblr.com/post/142215518744/improving-your-command-line-skills-part-2) we looked at Bash aliases. Today we will cover Bash functions.
 
