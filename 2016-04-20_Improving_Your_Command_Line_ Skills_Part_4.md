@@ -1,9 +1,3 @@
-
-**Suggested Tags:** raspberrypi, bash, command line, bash, .bashrc
-
-
-# Improving Your Command Line Skills Part 4 #
-
 **Author:  Steve Robillard**
 
 In the precious three parts of this series we covered [keyboard shortcuts, Man and TLDR pages](https://raspberrypise.tumblr.com/post/141758901139/improving-your-command-line-skills-part-1), [Bash aliases](https://raspberrypise.tumblr.com/post/142215518744/improving-your-command-line-skills-part-2) and [Functions](https://raspberrypise.tumblr.com/post/142634263599/improving-your-command-line-skills-part-3). In this final part I will present a way of managing all the additions we have made to the .bashrc file. 
@@ -45,13 +39,13 @@ Edit your ~/.bashrc file:
 
 Add the following to the end of the file:
 
-<pre># Load all files from .bashrc.d directory
-if [ -d "$HOME/.bashrc.d" ] && [ "$(find "$HOME/.bashrc.d/" -maxdepth 1 -name "*.sh" | wc -l)" -gt 0 ]; then
-  for file in $HOME/.bashrc.d/*.sh; do
-    source $file
-  done
-fi
-</pre>
+    # Load all files from .bashrc.d directory
+    if [ -d "$HOME/.bashrc.d" ] && [ "$(find "$HOME/.bashrc.d/" -maxdepth 1 -name "*.sh" | wc -l)" -gt 0 ]; then
+      for file in $HOME/.bashrc.d/*.sh; do
+        source $file
+      done
+    fi
+
 
 Save your changes and exit the editor (**ctrl + o, ctrl + x**). 
 
@@ -68,32 +62,32 @@ Now edit the file:
 
 and paste the following text:
 
-<pre># credit: http://nparikh.org/notes/zshrc.txt
-# Usage: extract 
-# Description: extracts archived files / mounts disk images
-# Note: .dmg/hdiutil is Mac OS X-specific.
-extract () {
-    if [ -f $1 ]; then
-        case $1 in
-            *.tar.bz2)  tar -jxvf $1                        ;;
-            *.tar.gz)   tar -zxvf $1                        ;;
-            *.bz2)      bunzip2 $1                          ;;
-            *.dmg)      hdiutil mount $1                    ;;
-            *.gz)       gunzip $1                           ;;
-            *.tar)      tar -xvf $1                         ;;
-            *.tbz2)     tar -jxvf $1                        ;;
-            *.tgz)      tar -zxvf $1                        ;;
-            *.zip)      unzip $1                            ;;
-            *.ZIP)      unzip $1                            ;;
-            *.pax)      cat $1 | pax -r                     ;;
-            *.pax.Z)    uncompress $1 --stdout | pax -r     ;;
-            *.Z)        uncompress $1                       ;;
-            *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
-}</pre>
+    # credit: http://nparikh.org/notes/zshrc.txt
+    # Usage: extract 
+    # Description: extracts archived files / mounts disk images
+    # Note: .dmg/hdiutil is Mac OS X-specific.
+    extract () {
+        if [ -f $1 ]; then
+            case $1 in
+                *.tar.bz2)  tar -jxvf $1                        ;;
+                *.tar.gz)   tar -zxvf $1                        ;;
+                *.bz2)      bunzip2 $1                          ;;
+                *.dmg)      hdiutil mount $1                    ;;
+                *.gz)       gunzip $1                           ;;
+                *.tar)      tar -xvf $1                         ;;
+                *.tbz2)     tar -jxvf $1                        ;;
+                *.tgz)      tar -zxvf $1                        ;;
+                *.zip)      unzip $1                            ;;
+                *.ZIP)      unzip $1                            ;;
+                *.pax)      cat $1 | pax -r                     ;;
+                *.pax.Z)    uncompress $1 --stdout | pax -r     ;;
+                *.Z)        uncompress $1                       ;;
+                *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
+            esac
+        else
+            echo "'$1' is not a valid file"
+        fi
+    }
 
 Save your changes and exit the editor (**ctrl + o, ctrl + x**).
  
