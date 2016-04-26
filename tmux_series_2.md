@@ -28,8 +28,29 @@ Next we see a list of the windows, and their names. Each window is given an auto
 
 ### Using Tmux
 
-As you may have guessed, you can start entering commands. If you run the command `uptime`, you'll see an output much like you'd normally expect. Where tmux gets interesting, is the pane and window functions mentioned earlier. To enter a command in TMux you need to use the *bind key*. The default bind key is `ctrl-b`. Once pressed, the next key entered will register a given command. 
+As you may have guessed, you can start entering commands. If you run the command `uptime`, you'll see an output much like you'd normally expect. Where Tmux gets interesting, is the pane and window functions mentioned earlier. To enter a command in Tmux you need to use the *bind key*. The default bind key is `ctrl-b`. Once pressed, the next key entered will register a given command. If you're familiar with Emacs, you'll find this familiar.
 
-For a simple example, we'll run two applications simultaniously. In the current pane, type `nano test.txt`. Type in "Hello, World!" and save the file by pressing `ctrl-o`. Now, in another case this might be a much bigger document. You may be writing something important (like this blog post), but need to check on something else (like the system load). So, to switch to another window, use the keys `ctrl-b` and then press `c` . 
+For a simple example, we'll run two applications simultaneously. For me, it's common to be writing a program, and want to test it at the same time. To demonstrate, create a new python script by typing `nano test.py`. You should now have a basic text editor that takes the entire screen. Go ahead and put the lines:
 
-You should now see that you have 2 windows, and the newest window is focused.
+    print("Hello, World!")
+    print("I'm playing with Tmux.")
+
+Now, save the file by pressing `ctrl-o`, but don't close it! Instead, we're going to open a new pane. This is done by pressing `ctrl-b` **then** `%`. Notice that these are two separate actions. Press the first set of keys, then the second.
+
+You should now see an entirely new pane, and your cursor should have been moved to it automatically. Run your script with the command `python3 test.py`, and you'll see the output as expected, right alongside your file editor. You can get back to the editor by `ctrl-b` and then the left keyboard arrow.
+
+That's it! You now know the basics of using Tmux. 
+
+### Some other commands to know:
+
+- split a pane horizontally: `ctrl-b` then `"`
+- close a pane: `ctrl-b` then `x`
+- create a window: `ctrl-b` then `c`
+- change to the next window: `ctrl-b` then `n`
+- change to the previous window: `ctrl-b` then `p`
+- change to a specific window: `ctrl-b` then its corresponding number
+- to close a window, simply close every pane in the window.
+
+### What's next?
+
+In the next article I'll go over how to use Tmux to keep programs running after disconnect, and basic scripting solutions with Tmux.
