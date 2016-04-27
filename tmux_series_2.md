@@ -16,7 +16,7 @@ Tmux is launched form a standard terminal. If you're in a desktop environment, y
 
 Before we go any further, it's probably important to clarify the vocabulary that will be used in this post.
 
-- **session:** An instance of Tmux. You can have multiple sessions running at the same time, but in most cases you will only ever interact with one of them at a time. Think of a session like an instance of a webrowser.
+- **session:** An instance of Tmux. You can have multiple sessions running at the same time, but in most cases you will only ever interact with one of them at a time. Think of a session like an instance of a web browser.
 - **window:** In Tmux, a window is similar to a web browser's tab.
 - **pane:** The actual interactive shell provided by Tmux. By default, each window has one pane, but the window can be divided into multiple panes. This can be though of like different content areas within a browser tab.
 
