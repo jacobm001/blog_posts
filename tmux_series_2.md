@@ -4,7 +4,7 @@
 
 **Suggested Tags:** raspberrypi, raspbian, tmux
 
-# Tmux 102: Getting to know Tmux.
+# Tmux 102: Getting to know Tmux
 
 [Tmux 101](https://raspberrypise.tumblr.com/post/141348857424/tmux-101-installing-from-source) discussed how to install Tmux from the source.  This week, we'll be focusing on Tmux's basic usage.
 
