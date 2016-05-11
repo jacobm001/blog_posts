@@ -2,7 +2,7 @@
 
 **Suggested Tags:** raspberrypi, data
 
-# Storing Information on a Raspberry Pi
+# Storing Data on a Raspberry Pi
 
 No matter what you do with your Raspberry Pi, you're bound to need to save information in some way or another. The main site has seen no shortage of questions on [databases](http://raspberrypi.stackexchange.com/search?q=databases) of various types. In this post, I'm going to discuss the various ways to store information on a Raspberry Pi, and the pros and cons of the various options.
 
@@ -44,9 +44,13 @@ Traditionally, databases are [relational](https://en.wikipedia.org/wiki/Relation
 
 One of the biggest advantages of using a DBMS is that unlike the lack of caching abilities in the former options, a DBMS is able to keep the most used information in RAM between instances of your application running. If you're just logging sensor information, this may not be a big deal, but if you're trying to run a website that has a high amount of traffic, the advanced caching capabilities of an RDMS can make a huge difference.
 
-Unfortunately, all that performance can come at a significant cost. The RDMS will take a non-insignificant amount of disk space and system resources. You'll have to decide if that trade off is worth it for your specific project.
+Unfortunately, all that performance can come at a significant cost. The RDMS will take a non-insignificant amount of disk space and system resources. You'll have to decide if that trade off is worth it for your specific project. Alternatively, you can store the RDMS on a different machine, and connect to it via a network. This removes the load from the given Raspberry Pi, but does require a decent network connection. 
 
 ### Examples
 1. [MySQL](https://www.mysql.com/) a relational DBMS
 2. [PostgreSQL](http://www.postgresql.org/) a relational DBMS
 3. [MongoDB](https://www.mongodb.com/) a noSQL document database
+
+## In Summary
+
+For most projects, flat file or embedded databases are probably sufficient, but some projects may benefit from more powerful solutions. You'll need to evalute what your project is doing, and determine which works for you.
