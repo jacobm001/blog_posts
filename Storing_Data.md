@@ -1,6 +1,6 @@
 **Author: Jacob Mastel**
 
-**Suggested Tags:** raspberrypi
+**Suggested Tags:** raspberrypi, data
 
 # Storing Information on a Raspberry Pi
 
@@ -27,21 +27,26 @@ The other major drawback of using a flat file database is that only one process 
 
 Embedded databases are technically flat file databases. I have, however, separated them into a separate category. Generally speaking, an embedded database is saved as a flat, binary file, and does not require a separate process to manage it.
 
-What differentiates them from a standard flat file database is that the libraries used to interact with them provide a significant subset of the features found in full database management systems (DMS). SQLite for example allows for standard SQL queries, indexing, view creating, and multiprocessing support, among other things.
+What differentiates them from a standard flat file database is that the libraries used to interact with them provide a significant subset of the features found in full database management systems (DBMS). SQLite for example allows for standard SQL queries, indexing, view creating, and multiprocessing support, among other things.
 
-As a flat file system, you still have a low overhead as it lacks the management process found with a full DMS. Their added functionality does add some overhead, but it's insignificant in comparison.
+As a flat file system, you still have a low overhead as it lacks the management process found with a full DBMS. Their added functionality does add some overhead, but it's insignificant in comparison. Like other flat file databases though, the cache support offered by embedded databases is slim to none. 
 
 ### Examples
 
 1. [SQLite](http://sqlite.org/) an embedded, relational database
 2. [Unqlite](https://unqlite.org/) an embedded, noSQL, document store database
 
-## Database Management Systems
+## Database Management Systems (DBMS)
+
+A [DBMS](https://en.wikipedia.org/wiki/Database) is an application that stores and retrieves data. It runs as a standalone application that provides an API for other applications to interact with. These applications are usually very complex and offer powerful features that can make dealing with large amounts of data breeze.
+
+Traditionally, databases are [relational](https://en.wikipedia.org/wiki/Relational_database), and most of what you'll find ready to use for the Raspberry Pi are in this classification. Although, the Raspberry Pi's performance and popularity has continued to grow, so there may well be additional options soon.
+
+One of the biggest advantages of using a DBMS is that unlike the lack of caching abilities in the former options, a DBMS is able to keep the most used information in RAM between instances of your application running. If you're just logging sensor information, this may not be a big deal, but if you're trying to run a website that has a high amount of traffic, the advanced caching capabilities of an RDMS can make a huge difference.
+
+Unfortunately, all that performance can come at a significant cost. The RDMS will take a non-insignificant amount of disk space and system resources. You'll have to decide if that trade off is worth it for your specific project.
 
 ### Examples
-
-### Benefits
-
-### Drawbacks
-
- 
+1. [MySQL](https://www.mysql.com/) a relational DBMS
+2. [PostgreSQL](http://www.postgresql.org/) a relational DBMS
+3. [MongoDB](https://www.mongodb.com/) a noSQL document database
