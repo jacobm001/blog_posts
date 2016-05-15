@@ -1,6 +1,6 @@
 **Author**: angussidney
 
-**Publish status**: Draft
+**Publish status**: Published May 04, 2016
 
 **Suggested Tags**: raspberrypi, raspbian, cameramodule
 
